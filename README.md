@@ -2,13 +2,15 @@
 (Beta) two-leg price engine in a triangular arbitrage. Need to be price-agnostic to 2 base currencies
 
 # Usage
-Add key and secret in `key/key.json`
+1. Add key and secret in `key/key.json`
 
-run  `python arb_engine cur1 cur2`
+2. run  `python arb_engine cur1 cur2`
 
-example : `python arb_engine BNB USDT` would create websockets subscription to all price stream that have both BNB/X and X/USDT symbols, regardless of currencies being the base or quote currencies. 
+example : 
+`python arb_engine BNB USDT` or `python arb_engine USDT BNB`
+create websockets subscription to all price stream that have both BNB/X and X/USDT symbols, regardless of currencies being the base or quote currencies. 
 
-Also `python arb_engine BNB USDT` and `python arb_engine USDT BNB` behave the same way.
+
 
 # Output
 (+BNB)s1b2: sell ANKRBNB buy ANKRBTC make 0.012(BNB) 0.022 2543.0
