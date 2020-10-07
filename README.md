@@ -32,5 +32,5 @@ create websockets subscription to all price stream that have both BNB/X and X/US
 `pip install requests websocket websocket-client`
 
 
-# Binance Account Opening 10% Commission Discount
+## Binance Account Opening 10% Commission Discount
 https://www.binance.com/en/register?ref=DGUT77BA
