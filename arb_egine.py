@@ -30,25 +30,20 @@ class arb_engine(subscriber):
 
 		 #eg :stream : UNIBTC, 10000, 100001
 	def update_bidask(self, stream, b_bid, b_ask):
-		try:
-			if stream.replace(self.Basecur1, '').replace(self.Basecur2, '') == '':
-				self.main_dict[stream] = b_bid + b_ask
-				return 1
-			if len(self.main_dict) < 1:
-				return -1
+		if stream.replace(self.Basecur1, '').replace(self.Basecur2, '') == '':
+			self.main_dict[stream] = b_bid + b_ask
+			return 1
+		if len(self.main_dict) < 1:
+			return -1
 
-			mask = stream.replace(self.Basecur1,'')
-			if  mask == stream:
-				cur = stream.replace(self.Basecur2,'')
-			else: cur = mask
+		mask = stream.replace(self.Basecur1,'')
+		if  mask == stream:
+			cur = stream.replace(self.Basecur2,'')
+		else: cur = mask
 
-			self.aggregator[cur][stream] = b_bid + b_ask # [bid, bquant, ask, aquant]
-			cur_dict = self.aggregator[cur]
-			checker(cur, cur_dict, self.main_dict, self.arb_limit, self.Basecur1, self.Basecur2, 'DEMO')
-		except Exception as e:
-			# pass
-			 print(e)
-			 traceback.print_exc()
+		self.aggregator[cur][stream] = b_bid + b_ask # [bid, bquant, ask, aquant]
+		cur_dict = self.aggregator[cur]
+		checker(cur, cur_dict, self.main_dict, self.arb_limit, self.Basecur1, self.Basecur2, 'DEMO')
 
 	def message_handler(self, message):
 		feed = json.loads(message)
