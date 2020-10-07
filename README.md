@@ -9,7 +9,9 @@ Also `python arb_engine BNB USDT` and `python arb_engine USDT BNB` behave the sa
 
 # Output
 (+BNB)s1b2: sell ANKRBNB buy ANKRBTC make 0.012(BNB) 0.022 2543.0
+
 (+BNB)s1b2: sell ANKRBNB buy ANKRBTC make 0.012(BNB) 0.021 2543.0
+
 (+BNB)s1b2: sell ANKRBNB buy ANKRBTC make 0.012(BNB) 0.021 2543.0
 
 Explanation :
