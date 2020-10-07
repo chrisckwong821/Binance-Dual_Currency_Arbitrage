@@ -67,7 +67,6 @@ class arb_engine(subscriber):
 
 if __name__ == '__main__':
 #quick sanity test
-	env = "LIVE"
 	if sys.argv[1:]:
 		arb_engine = arb_engine(sys.argv[1], sys.argv[2])
 		arb_engine.init()
