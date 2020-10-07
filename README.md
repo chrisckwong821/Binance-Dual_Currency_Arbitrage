@@ -25,3 +25,8 @@ create websockets subscription to all price stream that have both BNB/X and X/US
 **0.022:** Profit margin(%), 2.2% in this example.
 
 **2543:** Quantity, ANKR in this example
+
+
+
+# Dependency
+`pip install requests websocket websocket-client`
