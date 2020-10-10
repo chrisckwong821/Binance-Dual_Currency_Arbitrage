@@ -1,5 +1,5 @@
 # Binance-Dual_Currency_Arbitrage
-(Beta) two-leg price engine in a triangular arbitrage. Need to be price-agnostic to 2 base currencies
+(Beta) two-leg price engine in a triangular arbitrage. Need to be hold 2 base currencies
 
 # Usage
 1. Add key and secret in `key/key.json`
