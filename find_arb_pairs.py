@@ -57,6 +57,9 @@ class arb_symbol_finder:
         else:
             raise Exception("cannot call exchangeInfo")
 
+    # space = [{'PAX': ["PAXBNB", "PAXBTC"]}, ... ]
+
+
     def get_arb_pairs(self):
         arb_pairs = []
         for i, symbol in enumerate(self.symbol_set):
