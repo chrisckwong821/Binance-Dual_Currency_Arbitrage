@@ -13,7 +13,7 @@ create websockets subscription to all price stream that have both BNB/X and X/US
 
 
 # Output
-(+BNB)s1b2: sell ANKRBNB buy ANKRBTC make 0.012(BNB) 0.022 2543.0
+(+BNB)s1b2: sell ANKRBNB buy ANKRBTC make 0.012(BNB) 1.2% 2543
 
 ### Explanation :
 **+BNB:** The trades results in a net gain of BNB (thus net loss in BTC)
@@ -22,7 +22,7 @@ create websockets subscription to all price stream that have both BNB/X and X/US
 
 **make 0.012(BNB):** Expected profit (without discounting commission)
 
-**0.022:** Profit margin(%), 2.2% in this example.
+**1.2:** Profit margin(%)
 
 **2543:** Quantity, ANKR in this example
 
