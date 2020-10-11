@@ -1,5 +1,5 @@
 # Binance-Dual_Currency_Arbitrage
-(Beta) Bi-directional price engine for triangular arbitrage. Need to be hold 2 base currencies
+(Beta) Bi-directional price engine for triangular arbitrage. Need to hold 2 base currencies
 
 # Usage
 1. Add key and secret in `key/key.json`
