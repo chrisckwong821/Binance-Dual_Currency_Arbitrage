@@ -4,10 +4,10 @@
 # Usage
 1. Add key and secret in `key/key.json`
 
-2. run  `python arb_engine cur1 cur2`
+2. run  `python arb_engine.py cur1 cur2`
 
 example : 
-`python arb_engine BNB USDT` or `python arb_engine USDT BNB`
+`python arb_engine.py BNB USDT` or `python arb_engine.py USDT BNB`
 create websockets subscription to all price stream that have both BNB/X and X/USDT symbols, regardless of currencies being the base or quote currencies. 
 
 
