@@ -87,7 +87,7 @@ if __name__ == '__main__':
     #quick sanity test
     if sys.argv[1:]:
         bnbbtc = arb_symbol_finder(sys.argv[1], sys.argv[2])
-        print(bnbbtc.get_arb_pairs(), len(bnbbtc.get_arb_pairs()))
+        print(bnbbtc.get_arb_pairs(), 'total pairs: ', len(bnbbtc.get_arb_pairs()))
     else:
         bnbbtc = arb_symbol_finder('BNB','BTC')
-        print(bnbbtc.get_arb_pairs())
+        print(bnbbtc.get_arb_pairs(), 'total pairs: ', len(bnbbtc.get_arb_pairs()))
