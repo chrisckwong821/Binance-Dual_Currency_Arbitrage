@@ -7,8 +7,8 @@
 2. run  `python arb_engine.py cur1 cur2`
 
 example : 
-`python arb_engine.py BNB USDT` or `python arb_engine.py USDT BNB`
-create websockets subscription to all price stream that have both BNB/X and X/USDT symbols, regardless of currencies being the base or quote currencies. 
+`python arb_engine.py BNB BTC` or `python arb_engine.py BTC BNB`
+create websockets subscription to all price stream that have both BNB/X and X/BTC symbols, regardless of currencies being the base or quote currencies. 
 
 
 
