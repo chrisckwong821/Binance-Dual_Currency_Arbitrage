@@ -27,43 +27,6 @@ def num_after_point(x):
         return 0
     return len(s) - s.index('.') - 1
 
-# def maker_check(cur, cur_dict, main_dict, arb_limit, Basecur1, Basecur2, env):
-# 	enum = cur_dict['enum']
-# 	#print(cur_dict)
-# 	pairs = list(cur_dict.keys())
-# 	pairs.remove('enum')
-# 	pairs.sort()
-
-# 	try:
-# 		base1, base2 = pairs[0], pairs[1]
-# 	except IndexError:
-# 		print("waiting feed for both symbols")
-
-# 	main_pair, feed = list(main_dict.items())[0]
-# 	print('debugger : ', main_pair, feed)
-# 	main_bid = feed[0]
-# 	main_ask = feed[2]
-# 	#make sure price of main_dict is quoted as b1b2, flip it if it is b2b1
-# 	if main_pair.split(Basecur1).index('') == 1:
-# 		main_ask /= main_ask
-# 		main_bid /= main_bid
-
-
-# 	base1_b = float(cur_dict[base1][0])
-# 	base1_bq = float(cur_dict[base1][1])
-# 	base1_a = float(cur_dict[base1][2])
-# 	base1_aq = float(cur_dict[base1][3])
-
-# 	base2_b = float(cur_dict[base2][0])
-# 	base2_bq = float(cur_dict[base2][1])
-# 	base2_a = float(cur_dict[base2][2])
-# 	base2_aq = float(cur_dict[base2][3])
-
-# 	if env == "DEMO":
-# 		logger(ps1b2, pb1s2, arb_limit, cur_dict, s1b2_q, b1s2_q, base1_b)
-# 	if env == "LIVE":
-# 		maker_send(symbol, price, quantity)
-
 # curdict = {'SUSHI': {'enum':3, 'SUSHIBNB' : [bidprice, bidquan, askprice, askquan], 'SUSHIBTC':[.....] }}
 # main_dict = the dual currencies, {'BNBBTC': [bidprice, bidquant, askprice, askquant]}
 
