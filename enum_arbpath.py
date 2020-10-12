@@ -1,5 +1,3 @@
-
-from read_key import read_key
 from taker_send import taker_send
 
 # for base1 base2 currency: 
