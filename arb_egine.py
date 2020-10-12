@@ -12,7 +12,7 @@ import traceback
 env = "DEMO"
 	# arb_limit in standard unit(-0.01 = 1%), arb_quantity_limit (in main_pair) 1 for BNBBTC = 1 BNB:
 strategy = {'taker':
-				{'arb_limit': 0.01, 'arb_quantity_limit' : 0.4, 'env': 'LIVE'}
+				{'arb_limit': 0.01, 'arb_quantity_limit' : 0.4, 'env': 'DEMO'}
 			}
 
 class arb_engine(subscriber):
