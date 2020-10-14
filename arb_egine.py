@@ -83,7 +83,7 @@ class arb_engine(subscriber):
 if __name__ == '__main__':
 #quick sanity test
 	if sys.argv[1:]:
-		arb_engine = arb_engine(sys.argv[1], sys.argv[2],strategy=strategy)
+		arb_engine = arb_engine((Basecur1=sys.argv[1], Basecur2=sys.argv[2],strategy=strategy)
 		arb_engine.init()
 		arb_engine.start()
 	else:
